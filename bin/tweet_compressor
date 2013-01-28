@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative File.join '..', 'lib', 'tweet_compressor'
+
+unless ARGV.size == 1
+  puts "Usage: #{File.basename $0} <tweet>"
+  exit 1
+end
+
+tweet = TweetCompressor::Tweet.new ARGV.join ' '
+tweet.compress
+
+$stderr.puts "Chars: #{tweet.char_count}, Compression: #{tweet.compression_level}%"
+$stdout.puts ?\n, tweet.compressed

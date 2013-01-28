@@ -1,0 +1,50 @@
+# Bundler wants to ignore these.
+.bundle
+.config
+coverage
+doc/
+*.gem
+InstalledFiles
+lib/bundler/man
+pkg
+*.rbc
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+_yardoc
+.yardoc
+
+# Code coverage tests.
+coverage/
+
+# Ignore ctags and etags.
+tags
+TAGS
+
+# Ignore Ruby environment files.
+.rvmrc
+.rbenv
+
+# OS X files.
+.DS_Store
+
+# RCS files.
+RCS
+*,v
+
+# RDoc and YARD files.
+doc/
+rdoc/
+html/
+.yardoc/
+
+# Temporary files.
+*~
+*.bak
+*.swp
+tmp/
+
+# Vim artifacts, other than temp files.
+Session.vim
